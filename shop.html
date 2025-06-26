@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - Steele Wool</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .split-container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .split {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      text-decoration: none;
+      background-size: cover;
+      background-position: center;
+      transition: 0.3s ease-in-out;
+    }
+
+    .split:hover {
+      filter: brightness(1.1);
+    }
+
+    .left {
+      background-image: url('womens.jpg'); /* replace with your actual image */
+    }
+
+    .right {
+      background-image: url('mens.jpg'); /* replace with your actual image */
+    }
+
+    .split h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    a {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="split-container">
+    <a class="split left" href="womens.html">
+      <h1>Womens</h1>
+    </a>
+    <a class="split right" href="mens.html">
+      <h1>Mens</h1>
+    </a>
+  </div>
+</body>
+</html>
