@@ -7,48 +7,52 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Inter', sans-serif;
-    }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
 
-    .split-container {
-      display: flex;
-      height: 100vh;
-    }
+.split-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
 
-    .split {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: white;
-      text-decoration: none;
-      background-size: cover;
-      background-position: center;
-      transition: 0.3s ease-in-out;
-    }
+.split {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+  height: 100vh;
+}
 
-    .split:hover {
-      filter: brightness(1.1);
-    }
+.split:hover {
+  filter: brightness(1.05);
+}
 
-    .left {
-      background-image: url('womens.jpg'); /* replace with your actual image */
-    }
+.left {
+  background-image: url('womens.jpg'); /* Replace with actual path */
+}
 
-    .right {
-      background-image: url('mens.jpg'); /* replace with your actual image */
-    }
+.right {
+  background-image: url('mens.jpg'); /* Replace with actual path */
+}
 
-    .split h1 {
-      font-size: 3rem;
-      background-color: rgba(0,0,0,0.5);
-      padding: 1rem 2rem;
-      border-radius: 10px;
-    }
+.split h1 {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
 
     a {
       color: white;
